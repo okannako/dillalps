@@ -36,4 +36,4 @@ ps -ef | grep dill
 ./health_check.sh -v
 ```
 
-2-) https://staking.dill.xyz/en/ adresine giriyoruz ve yeledeklediğimiz validator_keys klasörünün içindeki eposit_data-xxxx.json dosyasını buraya upload ediyoruz.
+2-) https://staking.dill.xyz/en/ adresine giriyoruz ve yedeklediğimiz validator_keys klasörünün içindeki deposit_data-xxxx.json dosyasını buraya upload ediyoruz.
