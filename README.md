@@ -6,8 +6,34 @@
 
 ## Kurulum Adımları ve Kodları
 
-- Kurulumla ilgili bir videoda çektim ona da buradan ulaşabilirsniz. Aşağıdaki adımların uygulanma şekli videoda var. İlk olarak takımın yayınladığı tek satır kod ile başlıyoruz.
+1-) Kurulumla ilgili bir videoda çektim ona da buradan ulaşabilirsniz. Aşağıdaki adımların uygulanma şekli videoda var. İlk olarak takımın yayınladığı tek satır kod ile başlıyoruz.
 ```
 curl -sO https://raw.githubusercontent.com/DillLabs/launch-dill-node/main/dill.sh  && chmod +x dill.sh && ./dill.sh
 ```
-- 
+2-) İlk olarak karşımıza iki seçenekli bir uyarı çıkacak. Burada 1 numarayı (Launch a new dill node) seçtikten sonra enter a basıp devam ediyoruz.
+
+3-) Bu adımda 1 numara yeni bir validatör keyi (mnemonic) üretir ve bunu winscp vs bir programla KESİNLİKLE yedeklemeniz (/root/dill/validator_keys klasörünü tamamen alın, içinde mnemonic oluşturduktan sonra rastgele oluşturulan şifrenizde olacak) gerekiyor. Eğer önceki mnemonic'leri kullanacaksanız 2 numarayı seçmelisiniz (validator_keys klasörünü yedeklemenizi öneririm).
+
+4-) Bir sonraki adım deposit adımı. Discord'da alps kanalında faucet işlemi yapmalısınız. Faucet 3600 yollarsa Light Validator, 36000 yollarsa Full Validator çalıştıracaksınız demektir. Facuet'i aldıktan sonra https://alps.dill.xyz/ burada adresinizi aratarak ne kadar geldiğini görebilirsiniz.
+
+5-) Withdrawal address isteyecek herhangi bir EVM cüzdanınızı girebilirsiniz. Ben faucet için kullandığım cüzdanı girdim.
+
+6-) Step 2 Completed yazısı geldiğinde herhangi bir tuşa basıp bitmesini bekleyin daha sonra node running yazısıyla birlikte size Validatorünüzün pubkeyini verecek bunu da mutlaka bir yere not edin.
+
+## Stake Adımları
+
+1-) Node sisteme eşitlendikten sonra stake işlemlerini için aşağıdaki adımları takip ediniz. Aşağıdaki kodlardan herhangi biriyle yapabilirsiniz
+```
+tail -f $HOME/dill/light_node/logs/dill.log
+```
+```
+curl -s localhost:3500/eth/v1/beacon/headers | jq
+```
+```
+ps -ef | grep dill
+```
+```
+./health_check.sh -v
+```
+
+2-) https://staking.dill.xyz/en/ adresine giriyoruz ve yeledeklediğimiz validator_keys klasörünün içindeki eposit_data-xxxx.json dosyasını buraya upload ediyoruz.
