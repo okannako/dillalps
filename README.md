@@ -1,4 +1,4 @@
-![Car Crash Tv](https://github.com/user-attachments/assets/0fb35134-505d-4ebe-a03f-96b6c6c97a6a)
+![alps](https://github.com/user-attachments/assets/e9f05a09-e558-49f6-8100-6e60f478cb3c)
 
 ## Tavsiye Edilen Sistem Gereksinimleri
 - Light Validator:	2 cores	2G Ram	SSD: 20GB	  8Mb/s	  Ubuntu LTS 20.04+/MacOS
