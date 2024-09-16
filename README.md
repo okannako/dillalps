@@ -39,6 +39,8 @@ curl -s localhost:3500/eth/v1/node/syncing
 ![1](https://github.com/user-attachments/assets/f78c06f4-d9a2-4e24-8d74-5d92fa3bb6c5)
 
 3-) Upload işlemi bittikten sonra ileri diyoruz ve bir sonraki ekranda Metamask bağlayınca bize cüzdan balance'mızı gösterecek. Node türüne göre miktar burada görünmeli. Bunu onaylayıp ileri diyoruz.
-4-) Bir sonraki adımda Confirm Deposit'e tıklayarak Metasak cüzdanından gelen uyarıyı incelediğinizde depoasit etmek istediği miktarı 3600 ya da 36000 olarak görmeniz gerekiyor. Onay verdikten bir süre sonra ekranda aşağıdaki gibi bir görsel elde etmelisiniz.
-5-) Son olarak dillscan da validator public keyinizi arattığınızda validatorle ilgili bilgileri size göstermeli. Bir önceki adımdaki onaydan sonra yaklaşık 1 saat içinde dillscan de görünmeli. Kolay gelsin.
+
+4-) Bir sonraki adımda Send Deposit'e tıklayarak Metamask cüzdanından gelen uyarıyı incelediğinizde deposit etmek istediği miktarı 3600 ya da 36000 olarak görmeniz gerekiyor. Onay verdikten bir süre sonra ekranda aşağıdaki gibi bir görsel elde etmelisiniz.
+
+5-) Son olarak dillscan validator sayfasında da validator public keyinizi arattığınızda validatorünüzle ilgili bilgileri size göstermeli. Bir önceki adımdaki onaydan sonra yaklaşık 1 saat içinde dillscan de görünmeli. Kolay gelsin.
 
