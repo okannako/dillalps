@@ -24,17 +24,15 @@ curl -sO https://raw.githubusercontent.com/DillLabs/launch-dill-node/main/dill.s
 
 1-) Node sisteme eşitlendikten sonra stake işlemlerini için aşağıdaki adımları takip ediniz. Aşağıdaki kodlardan herhangi biriyle yapabilirsiniz
 ```
-tail -f $HOME/dill/light_node/logs/dill.log
+cd dill
+./health_check.sh -v
 ```
 ```
 curl -s localhost:3500/eth/v1/beacon/headers | jq
 ```
 ```
-ps -ef | grep dill
+curl -s localhost:3500/eth/v1/node/syncing
 ```
-```
-cd dill
-./health_check.sh -v
-```
+
 
 2-) https://staking.dill.xyz/en/ adresine giriyoruz ve yedeklediğimiz validator_keys klasörünün içindeki deposit_data-xxxx.json dosyasını buraya upload ediyoruz.
