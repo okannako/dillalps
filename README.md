@@ -33,6 +33,7 @@ curl -s localhost:3500/eth/v1/beacon/headers | jq
 ps -ef | grep dill
 ```
 ```
+cd dill
 ./health_check.sh -v
 ```
 
